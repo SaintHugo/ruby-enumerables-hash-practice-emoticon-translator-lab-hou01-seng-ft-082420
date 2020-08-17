@@ -24,8 +24,6 @@ end
 end
 return "Sorry, that emoticon does not exist!"
 end
-  # code goes here
-end
 
 def get_english_meaning
   # code goes here
