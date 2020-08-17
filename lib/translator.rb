@@ -6,11 +6,11 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   new_hash = {}
     library.each do |key, value|
-      empty_hash[key] = {}
-      empty_hash[key][:english] = value[0]
-      empty_hash[key][:japanese] = value[1]
+      new_hash[key] = {}
+      new_hash[key][:english] = value[0]
+      new_hash[key][:japanese] = value[1]
     end
-    empty_hash
+    new_hash
   end
 
 
