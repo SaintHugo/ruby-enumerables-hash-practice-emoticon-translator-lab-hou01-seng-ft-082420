@@ -24,11 +24,11 @@ def load_library(path)
   end
 
   def get_japanese_emoticon(library, emoticon)
-    emoticons = load_library(library)
+  emoticons = load_library(library)
     emoticons.each do |key, value|
       if emoticons[key][:english] == emoticon
         return emoticons[key][:japanese]
-    end
+  end
     end
     return "Sorry, that emoticon was not found"
   end
