@@ -16,13 +16,13 @@ def load_library(path)
 
 
 def get_japanese_emoticon(path)
-  emotions = load_library(library)
+  emotions = YAML.load_file(path)
 emotions.each do |key, value|
   if emotions[key][:english] == emoticon
     return emotions[key][:japanese]
 end
 end
-return "Sorry, the emoticon was not found"
+return "Sorry, that emoticon does not exist!"
 end
   # code goes here
 end
