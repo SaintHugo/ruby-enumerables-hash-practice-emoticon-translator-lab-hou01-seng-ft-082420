@@ -15,7 +15,7 @@ def load_library(path)
 
 
 
-def get_japanese_emoticon(path)
+def get_japanese_emoticon(path, emoticon)
   emotions = YAML.load_file(path)
 emotions.each do |key, value|
   if emotions[key][:english] == emoticon
