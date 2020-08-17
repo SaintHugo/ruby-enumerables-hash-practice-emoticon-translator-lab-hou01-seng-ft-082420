@@ -20,7 +20,7 @@ def load_library(path)
         return key
     end
     end
-    return "Sorry, that emoticon was not found"
+    return "Sorry, that emoticon does not exist!"
   end
 
 def get_japanese_emoticon(path, emoticon)
