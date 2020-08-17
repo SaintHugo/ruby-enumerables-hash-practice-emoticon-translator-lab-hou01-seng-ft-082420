@@ -13,8 +13,8 @@ def load_library(path)
     new_hash
   end
 
-  def get_english_meaning(library, emoticon)
-    emotions = load_library(library)
+  def get_english_meaning(path, emoticon)
+    emotions = YAML.load_file(path)
     emotions.each do |key, value|
       if emotions[key][:japanese] == emoticon
         return key
