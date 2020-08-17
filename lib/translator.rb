@@ -32,7 +32,3 @@ end
 end
 return "Sorry, that emoticon does not exist!"
 end
-
-def get_english_meaning
-  # code goes here
-end
